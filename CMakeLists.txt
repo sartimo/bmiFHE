@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.13)
+project(bmiFHE VERSION 1.0)
+add_executable(bmiFHE main.cpp)
+find_package(SEAL 4.1.2)
+target_link_libraries(seal SEAL::seal)
